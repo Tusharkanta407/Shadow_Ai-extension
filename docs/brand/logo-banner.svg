@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="160" viewBox="0 0 640 160" role="img" aria-label="Shadow AI Radar">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1218"/>
+      <stop offset="100%" stop-color="#132029"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5EEAD4"/>
+      <stop offset="100%" stop-color="#2DD4BF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="160" rx="20" fill="url(#bg)"/>
+
+  <!-- Radar mark -->
+  <g transform="translate(56,80)">
+    <circle r="42" fill="none" stroke="#1F3A3A" stroke-width="2"/>
+    <circle r="28" fill="none" stroke="#2A4F4C" stroke-width="2"/>
+    <circle r="14" fill="none" stroke="#3D6B66" stroke-width="2"/>
+    <path d="M0 0 L34 -18" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
+    <circle r="5" fill="#5EEAD4"/>
+    <circle cx="22" cy="-26" r="3.5" fill="#5EEAD4" opacity="0.9"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="120" y="74" fill="#F8FAFC" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="36" font-weight="700" letter-spacing="0.5">Shadow AI Radar</text>
+  <text x="122" y="104" fill="#94A3B8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" letter-spacing="2.5">AI DATA LOSS PREVENTION</text>
+</svg>
