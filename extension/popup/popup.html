@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shadow AI Radar</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <div class="brand">Shadow AI Radar</div>
+      <label class="switch">
+        <input type="checkbox" id="enabled" />
+        <span>Protection</span>
+      </label>
+    </header>
+
+    <p class="sub">Local DLP for ChatGPT &amp; Claude</p>
+
+    <div class="row">
+      <label><input type="checkbox" id="strictBlock" /> Block send (do not allow Send Anyway)</label>
+    </div>
+    <div class="row">
+      <label><input type="checkbox" id="useAi" /> Use OpenRouter AI layer</label>
+    </div>
+
+    <div class="stats">
+      <div><span id="count">0</span><small>events</small></div>
+      <div><span id="blocked">0</span><small>stopped</small></div>
+    </div>
+
+    <ul id="events" class="events"></ul>
+
+    <footer>
+      <button id="clear" type="button">Clear log</button>
+      <button id="settings" type="button">Settings</button>
+    </footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
